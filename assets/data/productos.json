@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "titulo": "Carne",
+        "precio": 3500,
+        "imagen": "https://s1.eestatic.com/2021/09/27/ciencia/nutricion/615201153_210045040_1024x576.jpg"
+    },
+    {
+        "id": 2,
+        "titulo": "Pollo",
+        "precio": 3500,
+        "imagen": "https://s1.eestatic.com/2021/09/27/ciencia/nutricion/615201153_210045040_1024x576.jpg"
+    },
+    {
+        "id": 3,
+        "titulo": "Empanadas",
+        "precio": 3500,
+        "imagen": "https://s1.eestatic.com/2021/09/27/ciencia/nutricion/615201153_210045040_1024x576.jpg"
+    },
+    {
+        "id": 4,
+        "titulo": "Milanesas",
+        "precio": 3500,
+        "imagen": "https://s1.eestatic.com/2021/09/27/ciencia/nutricion/615201153_210045040_1024x576.jpg"
+    }
+]
