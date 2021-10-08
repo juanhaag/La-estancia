@@ -17,7 +17,7 @@ function ingresarCarrito(e){
         carrito.push(productoGlobal[e.target.dataset.id]);
         //Genenerar btn comprar por wp
         setBtnComprarWp.innerHTML= `<a href="https://api.whatsapp.com/send?phone=5492262301420&text=Hola, Quisiera comprar estos productos!
-        ${carrito.titulo}
+        ${carrito[0].titulo}
         ">
         <button class="btn btn-primary" >Enviar carrito por wp
         </button></a>`
