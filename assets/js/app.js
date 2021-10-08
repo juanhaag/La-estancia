@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', traerDatos);
+const carrito= [];
 
 function traerDatos() {
-    const url = 'assets/data/productos.json'
+    const url = 'assets/data/product.json'
 
     fetch(url)
         .then(respuesta => respuesta.json())
@@ -13,9 +14,8 @@ function mostrarHTML(productos) {
 
     const listCard = $('#list-card')
 
-
-    productos.forEach(producto => {
-        const { id, titulo, precio, imagen } = producto;
+    Object.values(productos).forEach(producto => {
+        const { stock, titulo, precio, imagen } = producto;
 
         listCard.append(`<div class="card">
         <img class="card-img-top" src=${producto.imagen} alt="Card image cap">
@@ -24,10 +24,10 @@ function mostrarHTML(productos) {
             <p class="card-text">$${producto.precio}</p>
         </div>
         <div class="d-flex justify-content-center">
-            <button class="btn btn-primary m-1">
+            <button class="btn btn-primary m-1" dataset-id=${producto.id}>
                 Comprar
             </button>
-            <button class="btn btn-secondary m-1">
+            <button class="btn btn-secondary m-1" dataset-id=${producto.id}>
                 Agregar al carrito
             </button>
         </div>
