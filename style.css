@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:black(22, 21, 21);
+}
+
+/* Banner  */
+.banner{
+    margin: 30px 80px;
+}
+
+.logo{
+    width: 300px;
+}
+
+
+.buscar{
+    float: right;
+}
+
+.cartContainer{
+    float: right;
+    margin-left: 30px;
+}
+
+.cart{
+    float: right;
+    margin-top: 15px;
+    margin-right: 70px;
+}
+
+.buscar input{
+    margin-top: 15px;
+    background-color:   black;
+    border-radius: 40px;
+    width: 80px;
+    color: white;
+    padding-left: 20px;
+    border: none;
+}
+
+
+/* Fin de Banner */
